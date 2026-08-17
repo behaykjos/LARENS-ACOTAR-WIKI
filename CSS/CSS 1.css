@@ -1,0 +1,42 @@
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+body {
+    animation: fade 1.5s;
+    background-image: url('https://media.discordapp.net/attachments/1176244151029858315/1311791956971491501/Design_sem_nome_5.png?ex=674a24f6&is=6748d376&hm=f27e3123aa5ef62ae2535ba3bb82f6cc568b16ee73569e32047422730e440122&=&format=webp&quality=lossless&width=1440&height=184');
+    background-size: 1500px;
+    background-color: #808edf;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Gotu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+a {
+    color: rgb(39, 65, 198);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin-right: 20px;
+    transition: filter 0.3s ease;
+}
+
+img:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}

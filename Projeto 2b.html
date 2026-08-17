@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários de ACOTAR</title>
+        <link rel="icon" href="./Mídias/logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/CSS 2.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .quizizz {
+                margin-left: 30px;
+                border: 2px solid black;
+                width: 90%;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(33, 2, 107, 0.975);
+                transition: transform 0.3s ease;
+                overflow: hidden;
+                flex-wrap: wrap;
+            }
+            .quizizz p {
+                text-align: justify;
+            }
+            .quizizz img {
+                margin-right: 20px;
+                transition: filter 0.3s ease;
+            }
+            .quizizz img:hover {
+                filter: brightness(1.5);
+                transition: filter 0.3s ease;
+            }
+            img.no-style {
+                transform: none;
+            }
+            .textin {
+                background-color: rgba(255, 255, 255, 0.381);
+                color:aliceblue;
+            }
+            .fileira {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;
+            }
+            .fileira button {
+                border: 2px solid cornflowerblue;
+                background-color: azure;
+                border-radius: 8px;
+                height: 40px;
+                width: 100px;
+                margin: 10px;
+            }
+            .fileira a {
+                font-style: normal;
+                color: blue;
+                font-family: "Gotu", sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#dois"></a>
+            <a href="#tres"></a>
+            <a href="#quatro"></a>
+            <a href="#cinco"></a>
+            <a href="#seis"></a>
+            <a href="#sete"></a>
+            <a href="#oito"></a>
+            <a href="#nove"></a>
+            <a href="#dez"></a>
+            <a href="fim"></a>
+        </nav>
+        <br>
+        <h1>Formulários de ACOTAR</h1>
+        <h4>Boa sorte!</h4>
+        <br>
+        <img src="./Mídias/larenss.png" alt="Logo" style="position: absolute; top: 5px; left:5px; width: 350px; height: auto; flex-wrap: wrap;" onclick="window.location.href = 'Projeto 2a.html'">
+        <div class="quizizz">
+            <br>
+            <img src="https://i.pinimg.com/736x/25/b3/8c/25b38c22ec100e5950bfc443059bf7f9.jpg" alt="ACOTAR" height="300px" style="float:left">
+            <br>
+            <h2>Quem fez o quê?</h2>
+            <p>Adivinha qual personagem que condiz com a história, citação ou característica da questão e mostra ser um leitor atento aos detalhes da saga! Inclui acontecimentos dos primeiros dois livros: <i>Corte de Espinhos e Rosas</i> e <i>Corte de Névoa e Fúria</i>.</p>
+            <button type="button" id="start"><a href="#um">COMEÇAR</a></button>
+        </div>
+        <br>
+        <img src="./Índices/um.png" alt="Decoração 1" width="1200px" class="no-style" id="um">
+        <img src="./Índices/prim um.jpg" alt="Primeira questão" height="300px">
+        <h4>“Estás livre. Não a salvo. Não protegida” é a fala de…</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#dois">Morrigan</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#dois">Amren</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#dois">Rhysand</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#dois">Cassian</a></button>
+        </div>
+        <br>
+        <img src="./Índices/dois.png" alt="Decoração 2" width="1200px" class="no-style" id="dois">
+        <img src="./Índices/prim dois.jpg" alt="Segunda questão" height="300px">
+        <h4>Qual foi o primeiro illyriano a saudar Feyre na Casa do Vento?</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#tres">Azriel</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#tres">Amren</a></button>
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#tres">Cassian</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#tres">Morrigan</a></button>
+        </div>
+        <br>
+        <img src="./Índices/três.png" alt="Decoração 3" width="1200px" class="no-style" id="tres">
+        <img src="./Índices/prim tres.jpg" alt="Terceira questão" height="300px">
+        <h4>Como Feyre caracterizou a voz da Tecelã do Bosque?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#quatro"><i>Estridente e mortal</i></a></button>
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'incorrect')"><a href="#quatro"><i>Como o ronronar de uma amante</i></a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#quatro"><i>Grave e intensa</i></a></button>
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#quatro"><i>Doce e Bela</i></a></button>
+        </div>
+        <br>
+        <img src="./Índices/quatro.png" alt="Decoração 4" width="1200px" class="no-style" id="quatro">
+        <img src="./Índices/prim quatro.jpg" alt="Quarta questão" height="300px">
+        <h4> De que era feito a pulseira que Tarquin ofereceu a Feyre?</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#cinco">Pérolas</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#cinco">Safiras</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#cinco">Diamantes negros</a></button>
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#cinco">Pulseira?</a></button>
+        </div>
+        <br>
+        <img src="./Índices/cinco.png" alt="Decoração 5" width="1200px" class="no-style" id="cinco">
+        <img src="./Índices/prim cinco.jpg" alt="Quinta questão" height="300px">
+        <h4>Quando perguntado o que queria de Feyre na sua primeira vez na Corte da Noite, a primeira coisa que Rhysand sugere é para que ela tirasse seu “vestido horroroso”.</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#seis">Verdadeiro</a></button>
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#seis">Falso</a></button>
+        </div>
+        <br>
+        <img src="./Índices/seis.png" alt="Decoração 6" width="1200px" class="no-style" id="seis">
+        <img src="./Índices/prim seis.jpg" alt="Sexta questão" height="300px">
+        <h4>Quem começou o jogo de “Um pensamento pelo outro?”</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#sete">Rhysand</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#sete">Feyre</a></button>
+        </div>
+        <br>
+        <img src="./Índices/sete.png" alt="Decoração 7" width="1200px" class="no-style" id="sete">
+        <img src="./Índices/prim sete.jpg" alt="Sétima questão" height="300px">
+        <h4>Após os acontecimentos em Sob a Montanha, não foi difícil Rhysand convencer Feyre a aprender a ler e escrever.</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'correct')"><a href="#oito">Verdadeiro</a></button>
+            <button type="button" onclick="verificacao(this, 'incorrect')"><a href="#oito">Falso</a></button>
+        </div>
+        <br>
+        <img src="./Índices/oito.png" alt="Decoração 8" width="1200px" class="no-style" id="oito">
+        <img src="./Índices/prim oito.jpg" alt="Oitava questão" height="300px">
+        <h4>Porquê Feyre lançou seu sapato em Rhysand, no primeiro dia dela na Corte da Noite?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 80px; width: 120px;" onclick="verificacao(this, 'incorrect')"><a href="#nove">Por ela estar com medo dele machucá-la</a></button>
+            <button type="button" style="height: 80px; width: 120px;" onclick="verificacao(this, 'correct')"><a href="#nove">Por raiva de estar na Corte da Noite</a></button>
+            <button type="button" style="height: 50px; width: 120px;" onclick="verificacao(this, 'incorrect')"><a href="#nove">Por Rhysand tê-la insultado</a></button>
+            <button type="button" style="height: 50px; width: 120px;" onclick="verificacao(this, 'incorrect')"><a href="#nove">Primeiro dia?</a></button>
+        </div>
+        <br>
+        <img src="./Índices/nove.png" alt="Decoração 9" width="1200px" class="no-style" id="nove">
+        <img src="./Índices/prim nove.jpg" alt="Nona questão" height="300px">
+        <h4>Quando Feyre decide ir pra longe de Rhysand após saber que era sua parceira, onde Feyre fica?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#dez">Casa do Vento</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#dez">Casa do Rio</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'correct')"><a href="#dez">Casa de Névoa</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'incorrect')"><a href="#dez">Casa da Cidade</a></button>
+        </div>
+        <br>
+        <img src="./Índices/dez.png" alt="Decoração 10" width="1200px" class="no-style" id="dez">
+        <img src="./Índices/prim dez.jpg" alt="Décima questão" height="300px">
+        <h4>Qual a única coisa que pode invocar a fúria mortal de Amren instantaneamente?</h4>
+        <div class="fileira">
+            <button type="button"style="height: 50px;" onclick="verificacao(this, 'incorrect'); results()"><a href="#fim">Falarem da sua altura</a></button>
+            <button type="button"style="height: 50px;" onclick="verificacao(this, 'incorrect'); results()"><a href="#fim">Interrompê-la</a></button>
+            <button type="button"style="height: 50px;" onclick="verificacao(this, 'incorrect'); results()"><a href="#fim">Mexer nas suas jóias</a></button>
+            <button type="button" style="width: 140px; height: 50px;" onclick="verificacao(this, 'correct'); results()"><a href="#fim">Todas as opções anteriores</a></button>
+        </div>
+        <br><br id="fim">
+        <p id="emptyParagraph"></p>
+        <br>
+        <script type="text/javascript">
+            let contagem = 0;
+            let total = 10;
+            function verificacao(button, resp) {
+                if (resp === 'correct') {
+                    button.classList.add('correct');
+                    contagem++;
+                    console.log("deu certo tá");
+                }
+                else {
+                    button.classList.add('incorrect');
+                    console.log("tbm deu");
+                }
+            }
+            function results() {
+                const resultado = document.getElementById('resultado');
+                if (contagem === 10) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/25/b3/8c/25b38c22ec100e5950bfc443059bf7f9.jpg" alt="ACOTAR" height="300px" style="float:left">
+                            <br>
+                            <h2>Sua pontuação: ${contagem} de ${total}! QUÊ!?!</h2>
+                            <p>Vitória perfeita!!! Se não consultaste o livro ou a internet, parabéns por seres um leitor atento e focado, e por teres lembrado de todas as respostas! Leitores como tu fazem as conversas sobre ACOMAF serem sempre mais divertidas, e espero que brevemente possamos conversar sobre teorias e momentos preferidos do livro.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (contagem >= 6 && contagem <= 9) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/25/b3/8c/25b38c22ec100e5950bfc443059bf7f9.jpg" alt="ACOTAR" height="300px" style="float:left">
+                            <br>
+                            <h2>Sua pontuação: ${contagem} de ${total}!</h2>
+                            <p>Meus parabéns bookstan, realmente aproveitaste a leitura de ACOMAF e lembraste de algumas coisas! Espero que continues a amar esta saga perfeita e a lê-la várias e várias vezes, para decorares todos os detalhes especiais (como a planta que Feyre usou para curar Rhysand, sim, vamos fingir que você sabe essa). Bom trabalho!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (contagem >=3 && contagem <=5) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/25/b3/8c/25b38c22ec100e5950bfc443059bf7f9.jpg" alt="ACOTAR" height="300px" style="float:left">
+                            <br>
+                            <h2>Sua pontuação: ${contagem} de ${total}...</h2>
+                            <p>Okay, talvez não tenhas sequer lido o livro. Podes sempre passar na nossa página principal, onde encontras resumido cada livro, um pouco sobre as personagens principais, e ainda podes comprar o livro! Mas se realmente leste, bem, passaste uma grande vergonha agora, errando esse tanto, mas enfim...</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/25/b3/8c/25b38c22ec100e5950bfc443059bf7f9.jpg" alt="ACOTAR" height="300px" style="float:left">
+                            <br>
+                            <h2>Sua pontuação: ${contagem} de ${total}!?!</h2>
+                            <p>Realmente não sabes nada da história! Com uma pontuação dessas, nem chegaste a ler o livro, e quase ias apanhando <i>spoilers</i> dele! Já que, por estares aqui, deves ter vontade de lê-lo, passa pela nossa página principal e explora melhor o universo de ACOTAR, talvez depois acertes um pouco mais...</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="textin">
+            <br>
+            <p><b>&copy; 2024 Larens Acotar Wiki. Todos os direitos reservados.</b></p>
+            <p></p>
+            <a href="./Projeto 2a.html">Voltar para o menu principal</a>
+            <p>&nbsp;</p>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários de ACOTAR</title>
+        <link rel="icon" href="./Mídias/logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/CSS 2.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .quizizz {
+                margin-left: 30px;
+                border: 2px solid black;
+                width: 90%;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(33, 2, 107, 0.975);
+                transition: transform 0.3s ease;
+                overflow: hidden;
+                flex-wrap: wrap;
+            }
+            .quizizz p {
+                text-align: justify;
+            }
+            .quizizz img {
+                margin-right: 20px;
+                transition: filter 0.3s ease;
+            }
+            .quizizz img:hover {
+                filter: brightness(1.5);
+                transition: filter 0.3s ease;
+            }
+            img.no-style {
+                transform: none;
+            }
+            .textin {
+                background-color: rgba(255, 255, 255, 0.381);
+                color:aliceblue;
+            }
+            .fileira {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;
+            }
+            .fileira button {
+                border: 2px solid cornflowerblue;
+                background-color: azure;
+                border-radius: 8px;
+                height: 40px;
+                width: 100px;
+                margin: 10px;
+            }
+            .fileira a {
+                font-style: normal;
+                color: blue;
+                font-family: "Gotu", sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#dois"></a>
+            <a href="#tres"></a>
+            <a href="#quatro"></a>
+            <a href="#cinco"></a>
+            <a href="#seis"></a>
+            <a href="#sete"></a>
+            <a href="fim"></a>
+        </nav>
+        <br>
+        <h1>Formulários de ACOTAR</h1>
+        <h4>Boa sorte!</h4>
+        <br>
+        <img src="./Mídias/larenss.png" alt="Logo" style="position: absolute; top: 5px; left:5px; width: 350px; height: auto; flex-wrap: wrap;" onclick="window.location.href = 'Projeto 2a.html'">
+        <div class="quizizz">
+            <br>
+            <img src="https://i.pinimg.com/736x/5d/00/e2/5d00e2450863c27062b7ef8f542dbb2d.jpg" alt="Fêmeas em ACOTAR" height="300px" style="float:left">
+            <br>
+            <h2>Descobre a tua parceira</h2>
+            <p>Incluindo as fêmeas principais dos primeiros três livros (<i>Corte de Espinhos e Rosas</i>, <i>Corte de Névoa e Fúria</i> e <i>Corte de Asas e Ruína</i>), vê qual delas seria a tua parceira com estas perguntas simples! Não tenhas medo de dar um resultado caótico, como a ideia da autora de juntar Lucien e Nesta, porque nós sabemos o que estamos a fazer.</p>
+            <button type="button" id="start"><a href="#um">COMEÇAR</a></button>
+        </div>
+        <br>
+        <img src="./Índices/um.png" alt="Decoração 1" width="100%" class="no-style" id="um">
+        <img src="./Índices/quin um.jpg" alt="Primeira questão" height="300px">
+        <h4>Como costumas encarar novos desafios?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Feyre')"><a href="#dois">Quanto mais rápido os resolver, melhor.</a></button>
+            <button type="button" style="height: 65px; width: 100px;" onclick="verificacao(this, 'Nesta')"><a href="#dois">Adio até não poder mais.</a></button>
+            <button type="button" style="height: 70px; width: 160px;" onclick="verificacao(this, 'Cresseida')"><a href="#dois">Busco soluções estratégicas para superá-los.</a></button>
+            <button type="button" style="height: 60px; width: 150px;" onclick="verificacao(this, 'Elain')"><a href="#dois">Prefiro ir com calma e paciência.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Morrigan')"><a href="#dois">Encaro normalmente, faço o que preciso fazer.</a></button>
+            <button type="button" style="height: 65px; width: 130px;" onclick="verificacao(this, 'Gwyn')"><a href="#dois">Adoro enfrentar novos desafios!</a></button>
+        </div>
+        <br>
+        <img src="./Índices/dois.png" alt="Decoração 2" width="100%" class="no-style" id="dois">
+        <img src="./Índices/quin dois.jpg" alt="Segunda questão" height="300px">
+        <h4>Qual o teu hobby preferido?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Cresseida')"><a href="#tres">Praticar desporto</a></button>
+            <button type="button" style="height: 70px; width: 100px;" onclick="verificacao(this, 'Nesta')"><a href="#tres">Jogar ou assistir televisão</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Gwyn')"><a href="#tres">Escutar música</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Feyre')"><a href="#tres">Trabalho voluntário</a></button>
+            <button type="button" onclick="verificacao(this, 'Elain')"><a href="#tres">Ler/Escrever</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Morrigan')"><a href="#tres">Sair com amigos</a></button>
+        </div>
+        <br>
+        <img src="./Índices/três.png" alt="Decoração 3" width="100%" class="no-style" id="tres">
+        <img src="./Índices/quin tres.jpg" alt="Terceira questão" height="300px">
+        <h4>Qual o teu maior medo?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'Feyre')"><a href="#quatro"><i>Perder alguém importante</i></a></button>
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'Cresseida')"><a href="#quatro"><i>Não ser suficiente</i></a></button>
+            <button type="button" onclick="verificacao(this, 'Nesta')"><a href="#quatro"><i>Errar</i></a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Gwyn')"><a href="#quatro"><i>Do desconhecido</i></a></button>
+            <button type="button" onclick="verificacao(this, 'Elain')"><a href="#quatro"><i>Escuro</i></a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Morrigan')"><a href="#quatro"><i>Eu não tenho medo de nada</i></a></button>
+        </div>
+        <br>
+        <img src="./Índices/quatro.png" alt="Decoração 4" width="100%" class="no-style" id="quatro">
+        <img src="./Índices/quin quatro.jpg" alt="Quarta questão" height="300px">
+        <h4>Qual destas características combina mais contigo?</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'Elain')"><a href="#cinco">Simpatia</a></button>
+            <button type="button" onclick="verificacao(this, 'Feyre')"><a href="#cinco">Otimismo</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'Nesta')"><a href="#cinco">Proteção</a></button>
+            <button type="button" onclick="verificacao(this, 'Morrigan')"><a href="#cinco">Bom humor</a></button>
+            <button type="button" onclick="verificacao(this, 'Cresseida')"><a href="#cinco">Foco</a></button>
+            <button type="button" onclick="verificacao(this, 'Gwyn')"><a href="#cinco">Carisma</a></button>
+        </div>
+        <br>
+        <img src="./Índices/cinco.png" alt="Decoração 5" width="100%" class="no-style" id="cinco">
+        <img src="./Índices/quin cinco.jpg" alt="Quinta questão" height="300px">
+        <h4>Como costumas lidar com críticas?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Gwyn')"><a href="#seis">Não lido. Se não ouvi, não me afeta.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Feyre')"><a href="#seis">Procuro melhorar no aspecto criticado.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Nesta')"><a href="#seis">Tendo a discutir ou justificar minhas ações.</a></button>
+            <button type="button" style="height: 75px; width: 150px;" onclick="verificacao(this, 'Elain')"><a href="#seis">Primeiro me chateio, mas depois acabo por refletir sobre.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Cresseida')"><a href="#seis">Finjo que aceito, mas depois esqueço.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Morrigan')"><a href="#seis">Quer criticar? Vem e faz melhor.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/seis.png" alt="Decoração 6" width="100%" class="no-style" id="seis">
+        <img src="./Índices/quin seis.jpg" alt="Sexta questão" height="300px">
+        <h4>De que forma tomas uma decisão importante?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 60px; width: 180px;" onclick="verificacao(this, 'Cresseida')"><a href="#sete">Procuro pensar estruturadamente antes.</a></button>
+            <button type="button" style="height: 50px; width: 180px;" onclick="verificacao(this, 'Feyre')"><a href="#sete">Adio o máximo possível.</a></button>
+            <button type="button" style="height: 50px; width: 180px;" onclick="verificacao(this, 'Gwyn')"><a href="#sete">Sigo minha intuição.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Elain')"><a href="#sete">Peço opinião de amigos mais experientes no assunto.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Nesta')"><a href="#sete">Acabo decidindo sem pensar por ansiedade.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Morrigan')"><a href="#sete">Como qualquer decisão deve ser tomada: da primeira forma que eu pensar.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/sete.png" alt="Decoração 7" width="100%" class="no-style" id="sete">
+        <img src="./Índices/quin sete.jpg" alt="Sétima questão" height="300px">
+        <h4>Qual a tua maior motivação para alcançar um objetivo?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Feyre'); results()"><a href="#fim">A sensação de aprendizagem.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Morrigan'); results()"><a href="#fim">A cara dos invejosos quando eu conseguir.</a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Cresseida'); results()"><a href="#fim">A possibilidade de fazer algo único.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Elain'); results()"><a href="#fim">O reconhecimento de quem me importa.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Nesta'); results()"><a href="#fim">Motivação nunca, procrastinação sempre.</a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Gwyn'); results()"><a href="#fim">Saber que vou sempre inovar meu potencial.</a></button>
+        </div>
+        <br><br id="fim">
+        <p id="emptyParagraph"></p>
+        <br>
+        <script type="text/javascript">
+            let Feyre = 0;
+            let Elain = 0;
+            let Nesta = 0;
+            let Morrigan = 0;
+            let Cresseida = 0;
+            let Gwyn = 0;
+            function verificacao(button, quem) {
+                if (quem === 'Feyre') {
+                    Feyre++;
+                    console.log("prinn");
+                }
+                else
+                if (quem === 'Elain') {
+                    Elain++;
+                    console.log("beleza");
+                }
+                else
+                if (quem === 'Nesta') {
+                    Nesta++;
+                    console.log("ladra");
+                }
+                else
+                if (quem === 'Morrigan') {
+                    Morrigan++;
+                    console.log("sapata");
+                }
+                else
+                if (quem === 'Cresseida') {
+                    Cresseida++;
+                    console.log("veraum");
+                }
+                else {
+                    Gwyn++;
+                    console.log("ruiva");
+                }
+            }
+            function results() {
+                const resultado = document.getElementById('resultado');
+                if (Feyre > Elain && Feyre > Nesta && Feyre > Morrigan && Feyre > Cresseida && Feyre > Gwyn) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/46/6b/87/466b870f639e1e507f011f69f5775301.jpg" alt="Feyre" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Feyre!</h2>
+                            <p>Conseguiste para ti alguém que seja uma rocha em meio ao caos, mas que também te inspira a crescer. Feyre é a combinação perfeita de força, empatia e coragem. Ela não só estará ao teu lado em momentos difíceis, mas também te incentivará a perseguir os teus sonhos e enfrentar os teus medos. Um amor com ela é tão profundo quanto as estrelas, meus parabéns!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Elain > Feyre && Elain > Nesta && Elain > Morrigan && Elain > Cresseida && Elain > Gwyn) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/ce/5c/af/ce5caffa57dcae6838eb7c6954b6fc54.jpg" alt="Elain" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Elain!</h2>
+                            <p>Parabéns! Se o que valorizas é gentileza e um toque de delicadeza em meio às tempestades da vida, Elain é a tua escolha perfeita. Sua alma graciosa e pacífica traz luz onde há escuridão, e ela é o tipo de pessoa que valoriza os pequenos gestos e os momentos silenciosos, mas significativos. Com Elain, o amor floresce como o jardim mais belo, e se fores um bom jardineiro, tem tudo para dar certo.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Nesta > Feyre && Nesta > Elain && Nesta > Morrigan && Nesta > Cresseida && Nesta > Gwyn) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/c6/ed/bf/c6edbf29c35fb687d74d68b50443238e.jpg" alt="Nesta" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Nesta!</h2>
+                            <p>Wow... o fogo que queima em Nesta é para aqueles que não têm medo de serem desafiados. Ela é intensa, complexa e ferozmente leal a quem ama. O vosso relacionamento seria repleto de paixão e crescimento mútuo, pois ela exige o melhor de si mesma e de quem está ao seu lado. Um amor com Nesta é transformador, mas não é para qualquer um.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Morrigan > Feyre && Morrigan > Elain && Morrigan > Nesta && Morrigan > Cresseida && Morrigan > Gwyn) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/ef/7d/a9/ef7da9676777a9e3dcf46a835463e2e9.jpg" alt="Morrigan" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Morrigan!</h2>
+                            <p>Tiveste uma sorte grande! Morrigan é a alma da festa, a principal onde vai e mais reconhecida no que faz! Mesmo se não quiseres tanto foco, ela consegue deixar qualquer ambiente amável e faz de tudo por quem ama. Com ela, terás uma vida cheia de diversão e momentos memoráveis!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Cresseida > Feyre && Cresseida > Elain && Cresseida > Nesta && Cresseida > Morrigan && Cresseida > Gwyn) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://media.discordapp.net/attachments/1176244151029858315/1311623270818385930/460492243_1490471915171740_978927151005172848_n.png?ex=674987dc&is=6748365c&hm=1dc5d16b90f4ccd147895a7f91eb2041735efa38e610e6d3ac103c0969dffaad&=&format=webp&quality=lossless&width=420&height=525" alt="Cresseida" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Cresseida!</h2>
+                            <p>Elegância e força. Cresseida é uma mulher sábia, estratégica e inspira respeito, mas também sabe como se conectar profundamente. Ao lado dela, não terias apenas uma parceira, mas uma aliada em todas as batalhas da vida. Com Cresseida, o amor seria equilibrado e duradouro, e em tudo ganharias sabedoria e crescimento de espírito.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/20/2b/0d/202b0d273d01f8d57c4957b65170ee0d.jpg" alt="Gwyn" height="300px" style="float:left">
+                            <h2>Tua Parceira Ideal: Gwyneth!</h2>
+                            <p>Gwyn! Que sorte de ouro! Ela enfrentou suas próprias sombras e saiu delas mais forte e luminosa. É um poço de gentileza e carácter, a combinação perfeita entre o amor e a determinação! Com ela ao teu lado, tu consegues qualquer coisa!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="textin">
+            <br>
+            <p><b>&copy; 2024 Larens Acotar Wiki. Todos os direitos reservados.</b></p>
+            <p></p>
+            <a href="./Projeto 2a.html">Voltar para o menu principal</a>
+            <p>&nbsp;</p>
+        </div>
+    </footer>
+</html>

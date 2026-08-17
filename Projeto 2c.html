@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários de ACOTAR</title>
+        <link rel="icon" href="./Mídias/logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/CSS 2.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .quizizz {
+                margin-left: 30px;
+                border: 2px solid black;
+                width: 90%;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(33, 2, 107, 0.975);
+                transition: transform 0.3s ease;
+                overflow: hidden;
+                flex-wrap: wrap;
+            }
+            .quizizz p {
+                text-align: justify;
+            }
+            .quizizz img {
+                margin-right: 20px;
+                transition: filter 0.3s ease;
+            }
+            .quizizz img:hover {
+                filter: brightness(1.5);
+                transition: filter 0.3s ease;
+            }
+            img.no-style {
+                transform: none;
+            }
+            .textin {
+                background-color: rgba(255, 255, 255, 0.381);
+                color:aliceblue;
+            }
+            .fileira {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;
+            }
+            .fileira button {
+                border: 2px solid cornflowerblue;
+                background-color: azure;
+                border-radius: 8px;
+                height: 40px;
+                width: 100px;
+                margin: 10px;
+            }
+            .fileira a {
+                font-style: normal;
+                color: blue;
+                font-family: "Gotu", sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#dois"></a>
+            <a href="#tres"></a>
+            <a href="#quatro"></a>
+            <a href="#cinco"></a>
+            <a href="#seis"></a>
+            <a href="#sete"></a>
+            <a href="fim"></a>
+        </nav>
+        <br>
+        <h1>Formulários de ACOTAR</h1>
+        <h4>Boa sorte!</h4>
+        <br>
+        <img src="./Mídias/larenss.png" alt="Logo" style="position: absolute; top: 5px; left:5px; width: 350px; height: auto; flex-wrap: wrap;" onclick="window.location.href = 'Projeto 2a.html'">
+        <div class="quizizz">
+            <br>
+            <img src="https://i.pinimg.com/736x/a4/45/c5/a445c51d6ef667b5c412fd54a3055ca4.jpg" alt="Machos em ACOTAR" width="20%" style="float:left">
+            <br>
+            <h2>Descobre o teu parceiro</h2>
+            <p>Incluindo os machos principais dos primeiros três livros (<i>Corte de Espinhos e Rosas</i>, <i>Corte de Névoa e Fúria</i> e <i>Corte de Asas e Ruína</i>), vê qual deles combina mais com tua personalidade e descobre o teu possível parceiro dentro de Prythian! Se a maioria deles já tem uma parceira... acho que não é nosso problema.</p>
+            <button type="button" id="start"><a href="#um">COMEÇAR</a></button>
+        </div>
+        <br>
+        <img src="./Índices/um.png" alt="Decoração 1" width="100%" class="no-style" id="um">
+        <img src="./Índices/ter um.jpg" alt="Primeira questão" height="300px">
+        <h4>Qual o teu super poder de sonhos?</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'Tamlin')"><a href="#dois">Invisibilidade</a></button>
+            <button type="button" onclick="verificacao(this, 'Rhysand')"><a href="#dois">Telecinese</a></button>
+            <button type="button" style="height: 60px; width: 120px;" onclick="verificacao(this, 'Cassian')"><a href="#dois">Super força/velocidade</a></button>
+            <button type="button" style="height: 60px; width: 120px;" onclick="verificacao(this, 'Tarquin')"><a href="#dois">Controlar um elemento</a></button>
+            <button type="button" onclick="verificacao(this, 'Lucien')"><a href="#dois">Cura</a></button>
+            <button type="button" style="height: 60px" onclick="verificacao(this, 'Azriel')"><a href="#dois">Domínio do tempo</a></button>
+        </div>
+        <br>
+        <img src="./Índices/dois.png" alt="Decoração 2" width="100%" class="no-style" id="dois">
+        <img src="./Índices/ter dois.jpg" alt="Segunda questão" height="300px">
+        <h4>Qual o teu hobby preferido?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Cassian')"><a href="#tres">Praticar desporto</a></button>
+            <button type="button" style="height: 70px; width: 100px;" onclick="verificacao(this, 'Tamlin')"><a href="#tres">Jogar ou assistir televisão</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Azriel')"><a href="#tres">Escutar música</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Lucien')"><a href="#tres">Trabalho voluntário</a></button>
+            <button type="button" onclick="verificacao(this, 'Tarquin')"><a href="#tres">Ler/Escrever</a></button>
+            <button type="button" style="height: 70px" onclick="verificacao(this, 'Rhysand')"><a href="#tres">Sair com amigos</a></button>
+        </div>
+        <br>
+        <img src="./Índices/três.png" alt="Decoração 3" width="100%" class="no-style" id="tres">
+        <img src="./Índices/ter tres.jpg" alt="Terceira questão" height="300px">
+        <h4>Qual o teu maior medo?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'Rhysand')"><a href="#quatro"><i>Perder alguém importante</i></a></button>
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'Tamlin')"><a href="#quatro"><i>Não ser suficiente</i></a></button>
+            <button type="button" onclick="verificacao(this, 'Cassian')"><a href="#quatro"><i>Errar</i></a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Lucien')"><a href="#quatro"><i>Do desconhecido</i></a></button>
+            <button type="button" onclick="verificacao(this, 'Tarquin')"><a href="#quatro"><i>Escuro</i></a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Azriel')"><a href="#quatro"><i>Eu não tenho medo de nada</i></a></button>
+        </div>
+        <br>
+        <img src="./Índices/quatro.png" alt="Decoração 4" width="100%" class="no-style" id="quatro">
+        <img src="./Índices/ter quatro.jpg" alt="Quarta questão" height="300px">
+        <h4>Qual destas características combina mais contigo?</h4>
+        <div class="fileira">
+            <button type="button" onclick="verificacao(this, 'Tamlin')"><a href="#cinco">Gentileza</a></button>
+            <button type="button" onclick="verificacao(this, 'Tarquin')"><a href="#cinco">Otimismo</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'Rhysand')"><a href="#cinco">Proteção</a></button>
+            <button type="button" onclick="verificacao(this, 'Lucien')"><a href="#cinco">Bom humor</a></button>
+            <button type="button" onclick="verificacao(this, 'Cassian')"><a href="#cinco">Determinação</a></button>
+            <button type="button" onclick="verificacao(this, 'Azriel')"><a href="#cinco">Carisma</a></button>
+        </div>
+        <br>
+        <img src="./Índices/cinco.png" alt="Decoração 5" width="100%" class="no-style" id="cinco">
+        <img src="./Índices/ter cinco.jpg" alt="Quinta questão" height="300px">
+        <h4>Como costumas lidar com críticas?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Rhysand')"><a href="#seis">Não lido. Se não ouvi, não me afeta.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Azriel')"><a href="#seis">Procuro melhorar no aspecto criticado.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Cassian')"><a href="#seis">Tendo a discutir ou justificar minhas ações.</a></button>
+            <button type="button" style="height: 75px; width: 150px;" onclick="verificacao(this, 'Lucien')"><a href="#seis">Primeiro me magoa, mas depois acabo por refletir sobre.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Tarquin')"><a href="#seis">Finjo que aceito, mas depois esqueço.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Tamlin')"><a href="#seis">Quer criticar? Vem e faz melhor.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/seis.png" alt="Decoração 6" width="100%" class="no-style" id="seis">
+        <img src="./Índices/ter seis.jpg" alt="Sexta questão" height="300px">
+        <h4>De que forma tomas uma decisão importante?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 60px; width: 180px;" onclick="verificacao(this, 'Azriel')"><a href="#sete">Procuro pensar estruturadamente antes.</a></button>
+            <button type="button" style="height: 50px; width: 180px;" onclick="verificacao(this, 'Cassian')"><a href="#sete">Adio o máximo possível.</a></button>
+            <button type="button" style="height: 50px; width: 180px;" onclick="verificacao(this, 'Tarquin')"><a href="#sete">Sigo minha intuição.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Lucien')"><a href="#sete">Peço opinião de amigos mais experientes no assunto.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Tamlin')"><a href="#sete">Acabo decidindo sem pensar por ansiedade.</a></button>
+            <button type="button" style="height: 100px; width: 180px;" onclick="verificacao(this, 'Rhysand')"><a href="#sete">Como qualquer decisão deve ser tomada: da primeira forma que eu pensar.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/sete.png" alt="Decoração 7" width="100%" class="no-style" id="sete">
+        <img src="./Índices/ter sete.jpg" alt="Sétima questão" height="300px">
+        <h4>Qual a tua maior motivação para alcançar um objetivo?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Tarquin'); results()"><a href="#fim">A sensação de aprendizagem.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Rhysand'); results()"><a href="#fim">A cara dos invejosos quando eu conseguir.</a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Cassian'); results()"><a href="#fim">A possibilidade de fazer algo único.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Tamlin'); results()"><a href="#fim">O reconhecimento de quem me importa.</a></button>
+            <button type="button" style="height: 70px; width: 150px;" onclick="verificacao(this, 'Lucien'); results()"><a href="#fim">Motivação nunca, procrastinação sempre.</a></button>
+            <button type="button" style="height: 70px; width: 120px;" onclick="verificacao(this, 'Azriel'); results()"><a href="#fim">Saber que vou sempre inovar meu potencial.</a></button>
+        </div>
+        <br><br id="fim">
+        <p id="emptyParagraph"></p>
+        <br>
+        <script type="text/javascript">
+            let Tamlin = 0;
+            let Rhysand = 0;
+            let Azriel = 0;
+            let Cassian = 0;
+            let Lucien = 0;
+            let Tarquin = 0;
+            function verificacao(button, quem) {
+                if (quem === 'Tamlin') {
+                    Tamlin++;
+                    console.log("primavera");
+                }
+                else
+                if (quem === 'Rhysand') {
+                    Rhysand++;
+                    console.log("noite");
+                }
+                else
+                if (quem === 'Azriel') {
+                    Azriel++;
+                    console.log("sombras");
+                }
+                else
+                if (quem === 'Cassian') {
+                    Cassian++;
+                    console.log("guerra");
+                }
+                else
+                if (quem === 'Lucien') {
+                    Lucien++;
+                    console.log("depressaum");
+                }
+                else {
+                    Tarquin++;
+                    console.log("calor");
+                }
+            }
+            function results() {
+                const resultado = document.getElementById('resultado');
+                if (Tamlin > Rhysand && Tamlin > Azriel && Tamlin > Cassian && Tamlin > Lucien && Tamlin > Tarquin) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/9d/f8/2b/9df82b391d1f2c7ab88f290d79b50428.jpg" alt="Tamlin" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Tamlin!</h2>
+                            <p>Antes de tudo, saiba que Tamlin é uma figura complexa, cheia de nuances que tornam sua jornada única e fascinante. Ele representa força, paixão e uma ligação profunda com a natureza. Ele está disposto a fazer o que for necessário para proteger aqueles que são importantes para ele. Às vezes, sua determinação pode ser mal interpretada, mas lembre-se: sua essência é a de um líder que busca harmonia e equilíbrio. Ele carrega o peso de suas decisões com coragem, mostrando que até os mais poderosos enfrentam desafios internos.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Rhysand > Tamlin && Rhysand > Azriel && Rhysand > Cassian && Rhysand > Lucien && Rhysand > Tarquin) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/474x/dc/6a/36/dc6a368b20f3ea2e74b0efe919a5a58b.jpg" alt="Rhysand" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Rhysand!</h2>
+                            <p>Parabéns! O teu parceiro é Rhysand, o Grande Senhor mais poderoso de Prythian e uma figura marcada pelo equilíbrio entre luz e escuridão. Rhys é alguém que enxerga além das aparências, acreditando no potencial e na força interior das pessoas ao seu redor.</p>
+                            <p>Estar ao lado de Rhysand significa ter um parceiro que te apoia a voar cada vez mais alto, respeitando sua força e te encorajando a enfrentar o impossível. Ele nos ensina que o amor verdadeiro não é uma prisão, mas um lar onde você pode ser quem realmente é.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Azriel > Tamlin && Azriel > Rhysand && Azriel > Cassian && Azriel > Lucien && Azriel > Tarquin) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/b3/d3/82/b3d38292945fb57e90965b5ba64226fb.jpg" alt="Azriel" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Azriel!</h2>
+                            <p>Azriel é alguém que observa tudo ao seu redor, oferecendo apoio de maneira silenciosa, mas profundamente significativa. Uma parceria com o Illyriano sombrio com um coração cheio de segredos e uma alma profundamente leal é mergulhar em um amor profundo, onde as palavras podem ser substituídas por gestos, e cada momento é repleto de significado.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Cassian > Tamlin && Cassian > Rhysand && Cassian > Azriel && Cassian > Lucien && Cassian > Tarquin) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/28/bc/cd/28bccd2e8fbf5e7eb83acaafeb93097f.jpg" alt="Cassian" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Cassian!</h2>
+                            <p>Cassian é a personificação de força e humor: um parceiro que luta por ti, mas também ilumina os teus dias com risadas. Estar ao lado do illyriano significa ter um parceiro que será a tua fortaleza e a tua risada nos momentos certos. Ele nos ensina que, mesmo nas guerras mais difíceis, o amor e a amizade são as armas mais poderosas.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (Lucien > Tamlin && Lucien > Rhysand && Lucien > Cassian && Lucien > Azriel && Lucien > Tarquin) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/09/54/4f/09544f88230d753069822966497b306b.jpg" alt="Lucien" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Lucien!</h2>
+                            <p>Lucien, um espírito livre e resiliente, com olhos que enxergam além das aparências. Lucien, que carrega uma força interior impressionante, moldada por perdas e superações, mas nunca deixa de lutar por aquilo que acredita. Lucien, um amigo, um confidente, e o teu parceiro! Meus parabéns, ele é perfeito e meu preferido, porém todo seu! (Por favor, trate ele melhor do que a Elain, coitado)</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.pinimg.com/736x/d6/2d/28/d62d2876a8cf3a2afc397c497f347c7c.jpg" alt="Tarquin" height="300px" style="float:left">
+                            <h2>Teu Parceiro Ideal: Tarquin!</h2>
+                            <p>A tua sorte só pode ser de ouro! Tarquin é um macho que acredita na justiça, igualdade, e vai fazer todos os momentos serem confortantes. Para a tua sorte, ele não tem uma parceira ainda (como???), então ficaste com o pacote completo ao estar com um macho perfeito que nem ele que te encoraja a explorar, crescer e acreditar na bondade do mundo.</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="textin">
+            <br>
+            <p><b>&copy; 2024 Larens Acotar Wiki. Todos os direitos reservados.</b></p>
+            <p></p>
+            <a href="./Projeto 2a.html">Voltar para o menu principal</a>
+            <p>&nbsp;</p>
+        </div>
+    </footer>
+</html>

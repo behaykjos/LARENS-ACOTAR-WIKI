@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários de ACOTAR</title>
+        <link rel="icon" href="./Mídias/logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/CSS 2.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            .quizizz {
+                margin-left: 30px;
+                border: 2px solid black;
+                width: 90%;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(33, 2, 107, 0.975);
+                transition: transform 0.3s ease;
+                overflow: hidden;
+                flex-wrap: wrap;
+            }
+            .quizizz p {
+                text-align: justify;
+            }
+            .quizizz img {
+                margin-right: 20px;
+                transition: filter 0.3s ease;
+            }
+            .quizizz img:hover {
+                filter: brightness(1.5);
+                transition: filter 0.3s ease;
+            }
+            img.no-style {
+                transform: none;
+            }
+            .textin {
+                background-color: rgba(255, 255, 255, 0.381);
+                color:aliceblue;
+            }
+            .fileira {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;
+            }
+            .fileira button {
+                border: 2px solid cornflowerblue;
+                background-color: azure;
+                border-radius: 8px;
+                height: 40px;
+                width: 100px;
+                margin: 10px;
+            }
+            .fileira a {
+                font-style: normal;
+                color: blue;
+                font-family: "Gotu", sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#dois"></a>
+            <a href="#tres"></a>
+            <a href="#quatro"></a>
+            <a href="#cinco"></a>
+            <a href="#seis"></a>
+            <a href="#sete"></a>
+            <a href="#oito"></a>
+            <a href="#nove"></a>
+            <a href="fim"></a>
+        </nav>
+        <br>
+        <h1>Formulários de ACOTAR</h1>
+        <h4>Boa sorte!</h4>
+        <br>
+        <img src="./Mídias/larenss.png" alt="Logo" style="position: absolute; top: 5px; left:5px; width: 350px; height: auto; flex-wrap: wrap;" onclick="window.location.href = 'Projeto 2a.html'">
+        <div class="quizizz">
+                <br>
+                <img src="https://i.redd.it/congratulations-to-acotar-and-rhysand-cassian-for-winning-v0-wsgagx7bp5zb1.jpg?width=874&format=pjpg&auto=webp&s=481fd84ea9a6428ec778c7babf2ab7d7aabd13ad" alt="Trio Illyriano" height="300px" style="float:left">
+                <br>
+                <h2>Prepara a tua Guerra com Rhysand e Cassian!</h2>
+                <p>Inspirado no terceiro livro da saga, <i>Corte de Asas e Ruína</i>, vê se conseguirias ter equipado um exército com altas ou fracas chances de sucesso na guerra que definiu o destino de Prythian, Hybern e todas as terras feéricas e humanas!</p>
+                <button type="button" id="start"><a href="#um">COMEÇAR</a></button>
+        </div>
+        <br>
+        <img src="./Índices/um.png" alt="Decoração 1" width="1200px" class="no-style" id="um">
+        <img src="./Índices/quar um.jpg" alt="Primeira questão" height="300px" class="meme">
+        <h4>Antes de mais nada, o primeiro passo na preparação para a guerra vai ser...</h4>
+        <div class="fileira">
+            <button type="button" style="height: 55px;" onclick="verificacao(this, 'sim')"><a href="#dois">Arranjar aliados.</a></button>
+            <button type="button" style="height: 55px;" onclick="verificacao(this, 'nao')"><a href="#dois">Preparar o exército.</a></button>
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'nao')"><a href="#dois">Arranjar estratégias de defesa.</a></button>
+            <button type="button" style="height: 55px;" onclick="verificacao(this, 'nao')"><a href="#dois">Sentar e chorar.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/dois.png" alt="Decoração 2" width="1200px" class="no-style" id="dois">
+        <img src="./Índices/quar dois.jpg" alt="Segunda questão" height="300px">
+        <h4>Unido a Rhysand, qual método usarias para convencer os Grandes Senhores (que não têm <b>nenhuma</b> intenção de aliar com a Corte da Noite) a, precisamente, aliarem-se com a Corte da Noite?</h4>
+        <div class="fileira">
+            <button type="button" style="width: 200px; height: 100px;" onclick="verificacao(this, 'nao')"><a href="#tres">Lembrar o momento crítico vivido em Prythian e como é essencial a colaboração de todos.</a></button>
+            <button type="button" style="width: 130px; height: 55px;" onclick="verificacao(this, 'nao')"><a href="#tres">Ameaçar os que não se aliarem.</a></button>
+            <button type="button" style="width: 150px; height: 75px;" onclick="verificacao(this, 'nao')"><a href="#tres">Mostrar um plano de guerra para convencê-los.</a></button>
+            <button type="button" onclick="verificacao(this, 'sim')"><a href="#tres">Negociar.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/três.png" alt="Decoração 3" width="1200px" class="no-style" id="tres">
+        <img src="./Índices/quar tres.jpg" alt="Terceira questão" height="300px">
+        <h4>Agora, juntamente com Cassian, precisas preparar o exército illyriano. Em qual te focarás primeiramente?</h4>
+        <div class="fileira">
+            <button type="button" style="width: 130px; height: 70px;" onclick="verificacao(this, 'sim')"><a href="#quatro">Nos campos illyrianos mais interiores.</a></button>
+            <button type="button" style="height: 70px;" onclick="verificacao(this, 'nao')"><a href="#quatro">Com as valquírias.</a></button>
+            <button type="button" style="width: 150px; height: 60px;" onclick="verificacao(this, 'sim')"><a href="#quatro">Nos principais campos illyrianos.</a></button>
+            <button type="button" style="width: 170px; height: 90px;" onclick="verificacao(this, 'nao')"><a href="#quatro">Unir todos os campos illyrianos seria mais simples.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/quatro.png" alt="Decoração 4" width="1200px" class="no-style" id="quatro">
+        <img src="./Índices/quar quatro.jpg" alt="Quarta questão" height="300px">
+        <h4>O comando do exército da Corte dos Pesadelos ficará na posse de quem, principalmente?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 60px; width: 150px;" onclick="verificacao(this, 'nao')"><a href="#cinco">Cassian (o comandante é ele).</a></button>
+            <button type="button" style="height: 60px; width: 180px;" onclick="verificacao(this, 'sim')"><a href="#cinco">Keir (o governador da Cidade Escavada é ele)</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'nao')"><a href="#cinco">Minha, claro.</a></button>
+            <button type="button"  style="height: 60px; width: 180px;"onclick="verificacao(this, 'nao')"><a href="#cinco">Nem existe um exército da Corte dos Pesadelos.</a></button>
+        </div> 
+        <br> 
+        <img src="./Índices/cinco.png" alt="Decoração 5" width="1200px" class="no-style" id="cinco">
+        <img src="./Índices/quar cinco.jpg" alt="Quinta questão" height="300px">
+        <h4>Na Corte da Noite, qual a cidade protegerias a todo custo da guerra?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 60px; width: 150px;" onclick="verificacao(this, 'sim')"><a href="#seis">Velaris, na Corte dos Sonhos</a></button>
+            <button type="button" style="height: 60px; width: 180px;" onclick="verificacao(this, 'nao')"><a href="#seis">Cidade Decepada, na Corte dos Pesadelos</a></button>
+        </div>
+        <br>
+        <img src="./Índices/seis.png" alt="Decoração 6" width="1200px" class="no-style" id="seis">
+        <img src="./Índices/quar seis.jpg" alt="Sexta questão" height="300px">
+        <h4>De acordo com a tua resposta anterior, o que farias para protegê-la?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 50px; width: 130px;" onclick="verificacao(this, 'sim')"><a href="#sete">Camadas de escudo mágico.</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'sim')"><a href="#sete">Grupos de patrulha.</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'nao')"><a href="#sete">Montar armadilhas.</a></button>
+            <button type="button" style="height: 70px; width: 180px;" onclick="verificacao(this, 'nao')"><a href="#sete">Usar poderes de invisibilidade para cobrir a cidade.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/sete.png" alt="Decoração 7" width="1200px" class="no-style" id="sete">
+        <img src="./Índices/quar sete.jpg" alt="Sétima questão" height="300px">
+        <h4>Se pudeses ajudar um destes feéricos a aprimorar o seu poder para uso na guerra, quem ajudarias?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 75px; width: 180px;" onclick="verificacao(this, 'sim')"><a href="#oito">Feyre, pois contém um grão de poder de todos os Grandes Senhores.</a></button>
+            <button type="button" style="height: 75px; width: 180px;" onclick="verificacao(this, 'nao')"><a href="#oito">Nesta, por sua ligação ao Caldeirão e o poder roubado deste.</a></button>
+            <button type="button" style="height: 70px; width: 180px;" onclick="verificacao(this, 'nao')"><a href="#oito">Amren, por ela ser extremamente poderosa.</a></button>
+            <button type="button" style="height: 60px; width: 180px;" onclick="verificacao(this, 'nao')"><a href="#oito">Elain, pois ela é uma <i>vidente</i>.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/oito.png" alt="Decoração 8" width="1200px" class="no-style" id="oito">
+        <img src="./Índices/quar oito.jpg" alt="Oitava questão" height="300px">
+        <h4>Juntamente com Rhysand, precisas definir um <i>Plano de Contingência</i> caso as coisas não dêem certo. O que planearias?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 80px; width: 180px;" style="height: 80px; width: 120px;" onclick="verificacao(this, 'nao')"><a href="#nove">Um lugar para os sobreviventes fugirem e ficarem seguros.</a></button>
+            <button type="button" style="height: 60px; width: 100px;" onclick="verificacao(this, 'nao')"><a href="#nove">Uma arma secreta.</a></button>
+            <button type="button" style="height: 80px; width: 160px;" onclick="verificacao(this, 'sim')"><a href="#nove">Nada, pois o pensamento otimista ajuda sempre.</a></button>
+        </div>
+        <br>
+        <img src="./Índices/nove.png" alt="Decoração 9" width="1200px" class="no-style" id="nove">
+        <img src="./Índices/quar nove.png" alt="Nona questão" height="300px">
+        <h4>Para a frente da guerra, em qual exército darias mais peso?</h4>
+        <div class="fileira">
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'sim'); results()"><a href="#fim">Exército terrestre.</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'nao'); results()"><a href="#fim">Exército aéreo.</a></button>
+            <button type="button" style="height: 50px; width: 150px;" onclick="verificacao(this, 'nao'); results()"><a href="#fim">Exército de magia por distância.</a></button>
+            <button type="button" style="height: 50px;" onclick="verificacao(this, 'nao'); results()"><a href="#fim">Exército impostor.</a></button>
+        </div>
+        <br><br id="fim">
+        <p id="emptyParagraph"></p>
+        <br>
+        <script type="text/javascript">
+            let sucesso = 0;
+            let fracasso = 0;
+            function verificacao(button, resp) {
+                if (resp === 'sim') {
+                    sucesso++;
+                    console.log("tudo pra dar certo");
+                }
+                else {
+                    fracasso++;
+                    console.log("tudo pra dar errado");
+                }
+            }
+            function results() {
+                const resultado = document.getElementById('resultado');
+                if (sucesso > fracasso) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.redd.it/congratulations-to-acotar-and-rhysand-cassian-for-winning-v0-wsgagx7bp5zb1.jpg?width=874&format=pjpg&auto=webp&s=481fd84ea9a6428ec778c7babf2ab7d7aabd13ad" alt="Trio Illyriano" height="300px" style="float:left">
+                            <br>
+                            <h2>O fim seria uma... VITÓRIA!</h2>
+                            <p>Como que conseguiste preparar um plano de guerra melhor que o plano de Cassian e Rhysand? Claramente estariam muito honrados com a tua ajuda e perspicácia para uma guerra que, mesmo em meio aos desafios e sacrifícios, terminaria com a vitória de Prythian e o salvamento de todas as terras feéricas e humanas!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else
+                if (fracasso > sucesso) {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.redd.it/congratulations-to-acotar-and-rhysand-cassian-for-winning-v0-wsgagx7bp5zb1.jpg?width=874&format=pjpg&auto=webp&s=481fd84ea9a6428ec778c7babf2ab7d7aabd13ad" alt="Trio Illyriano" height="300px" style="float:left">
+                            <br>
+                            <h2>O fim seria uma... DERROTA!</h2>
+                            <p>Claramente não faria muita diferença ajudares ou não. Se Amren estivesse por trás seguindo o plano como fez no livro, pelo menos tu não terias arruinado a única oportunidade de salvar Prythian. Talvez devesses repensar mais sobre as tuas estratégias e, claro, reler o livro!</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+                else {
+                    document.getElementById("emptyParagraph").innerHTML =  `
+                        <div class="quizizz">
+                            <br>
+                            <img src="https://i.redd.it/congratulations-to-acotar-and-rhysand-cassian-for-winning-v0-wsgagx7bp5zb1.jpg?width=874&format=pjpg&auto=webp&s=481fd84ea9a6428ec778c7babf2ab7d7aabd13ad" alt="Trio Illyriano" height="300px" style="float:left">
+                            <br>
+                            <h2>O fim seria... um empate?</h2>
+                            <p>Estranhamente, as tuas probabilidades se sucesso e fracasso são iguais, então tudo dependeria de como executarias o teu plano em campo de batalha. Talvez, se releres o livro, podes construir um plano de guerra mais seguro...</p>
+                            <p>Se, por acaso, quiseres repetir, <i>easy-peasy</i>, <a href="#um">Clica aqui</a>.</p>
+                        </div>
+                    `;
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="textin">
+            <br>
+            <p><b>&copy; 2024 Larens Acotar Wiki. Todos os direitos reservados.</b></p>
+            <p></p>
+            <a href="./Projeto 2a.html">Voltar para o menu principal</a>
+            <p>&nbsp;</p>
+        </div>
+    </footer>
+</html>
